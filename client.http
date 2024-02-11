@@ -14,14 +14,15 @@ content-type: application/json
 ###
 
 # get-poll
-GET {{base_uri}}/polls/f2f3f99d-5180-4b4d-9f07-6119efe4fc56 HTTP/1.1
+GET {{base_uri}}/polls/84c681ee-0ee5-49f7-be81-7dca690e2cae HTTP/1.1
 
 ###
 
 # vote-on-poll
-POST {{base_uri}}/polls/f2f3f99d-5180-4b4d-9f07-6119efe4fc56/votes HTTP/1.1
+POST {{base_uri}}/polls/84c681ee-0ee5-49f7-be81-7dca690e2cae/votes HTTP/1.1
 content-type: application/json
 
 {
-    "pollOptionId": "2a3554a7-032c-4b50-89f4-b1d9d0135eb0"
+    "pollOptionId": "3d8bdcad-7720-43a5-8a18-161e9ac41354"
 }
+
