@@ -1,0 +1,27 @@
+@base_uri=http://localhost:3333
+
+###
+
+# create-poll
+POST {{base_uri}}/polls HTTP/1.1
+content-type: application/json
+
+{
+    "title":"Testando",
+    "options": ["Express", "Fastify", "NestJS", "HapiJS"]
+}
+
+###
+
+# get-poll
+GET {{base_uri}}/polls/f2f3f99d-5180-4b4d-9f07-6119efe4fc56 HTTP/1.1
+
+###
+
+# vote-on-poll
+POST {{base_uri}}/polls/f2f3f99d-5180-4b4d-9f07-6119efe4fc56/votes HTTP/1.1
+content-type: application/json
+
+{
+    "pollOptionId": "2a3554a7-032c-4b50-89f4-b1d9d0135eb0"
+}
