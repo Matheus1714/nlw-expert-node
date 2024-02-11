@@ -26,3 +26,5 @@ content-type: application/json
     "pollOptionId": "3d8bdcad-7720-43a5-8a18-161e9ac41354"
 }
 
+# Web socket route: {{base_uri}}/polls/:pollId/results
+# {{base_uri}}/polls/84c681ee-0ee5-49f7-be81-7dca690e2cae/results
